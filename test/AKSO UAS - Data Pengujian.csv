@@ -1,0 +1,6 @@
+,,,,,,,
+,JUMALH KOMBINASI,WAKTU SEKUENSIAL (MS),WAKTU OPEN MP (MS),WAKTU OPEN CL (MS),SPEEDUP OPEN MP (X),SPEEDUP OPEN CL (X),ANALISIS
+,10000000,7,10,35,"0,7","0,2857142857",Beban terlalu ringan. Overhead pembuatan thread membuat OpenMP lebih lambat dari CPU tunggal. Eksekusi OpenCL didominasi oleh waktu persiapan.
+,50000000,47,39,200,"1,205128205","0,195",Beban transisi. Keuntungan OpenMP mulai menutupi waktu overhead thread. OpenCL masih terhambat bottleneck transfer data PCIe
+,100000000,104,78,438,"1,333333333","0,1780821918",Skalabilitas OpenMP semakin baik (1.33x). Waktu komputasi GPU masih lebih cepat selesai dibandingkan waktu penyalinan data dari RAM ke VRAM.
+,500000000,661,391,16853,"1,690537084","0,0232006171",Efisiensi OpenMP optimal di 1.69x. Sebaliknya terjadi memory bottleneck yang sangat parah pada OpenCL akibat batas bandwidth memori; memindahkan data masif memakan waktu hingga 16 detik.
