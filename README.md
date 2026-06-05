@@ -35,9 +35,9 @@ Proyek ini merupakan program simulasi untuk membandingkan performa komputasi ant
    - Jika tidak bisa :
      `g++ src/main.cpp -O3 -fopenmp -I "C:\Users\nama\vcpkg\installed\x64-windows\include" -o scheduler_test C:\Windows\System32\OpenCL.dll`
 3. **Eksekusi:**
+   - Masukkan jumlah kombinasi data yang ingin diuji (contoh: 50000000).
    - Jalankan file hasil kompilasi:
      `.\scheduler_test.exe`
-   - Masukkan jumlah kombinasi data yang ingin diuji (contoh: 50000000).
 
 TIPS : SETELAH GANTI JUMLAH DATA MAKANAN DI CODE, LAKUKAN NOMOR 2 (KOMPILASI) LALU NOMOR 3 (EKSEKUSI)
 
