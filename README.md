@@ -49,4 +49,4 @@ OpenMP menghasilkan speedup sebesar 1.69054x terhadap metode Sekuensial. Sementa
 
 ## Link Video Penjelasan
 
-[Masukkan Link YouTube Anda Di Sini]
+[https://youtu.be/9DMn3842bo4feature=shared]
